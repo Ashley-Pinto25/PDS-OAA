@@ -144,16 +144,3 @@ Check for:
 - Cases where `Production > 0` and `Area == 0`  
 - Any `Crop_Year` in the future (e.g., > 2024)
 
----
-## 🔍 1. Discovering
-
-### (i) Identify Columns with Issues
-Read in the `Crop_Production` data from the CSV file and:
-- List all column names with **trailing or leading spaces**.
-- Check for **inconsistent spellings** or **capitalization** in categorical columns (e.g., `District`).
-
-**Hints:**
-```python
-df.info()
-df.columns
-df['col'].unique()
